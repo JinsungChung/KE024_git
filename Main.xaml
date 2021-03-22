@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>711.2,736.8</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1100.8,841.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Main2_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="26">
@@ -327,9 +327,9 @@
                   </sap:WorkflowViewStateService.ViewState>
                   <Transition.Condition>[SystemError IsNot Nothing]</Transition.Condition>
                   <Transition.To>
-                    <State x:Name="__ReferenceID3" DisplayName="Init" sap:VirtualizedContainerService.HintSize="253.6,61.6" sap2010:WorkflowViewState.IdRef="State_2">
+                    <State x:Name="__ReferenceID3" DisplayName="Init" sap:VirtualizedContainerService.HintSize="770.4,3830.4" sap2010:WorkflowViewState.IdRef="State_2">
                       <State.Entry>
-                        <TryCatch DisplayName="Catch intialization exceptions" sap:VirtualizedContainerService.HintSize="730,3281" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                        <TryCatch DisplayName="Catch intialization exceptions" sap:VirtualizedContainerService.HintSize="725.6,3441.6" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -337,14 +337,14 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <TryCatch.Try>
-                            <Sequence DisplayName="Init State" sap:VirtualizedContainerService.HintSize="692,2842" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                            <Sequence DisplayName="Init State" sap:VirtualizedContainerService.HintSize="688.8,2998.4" sap2010:WorkflowViewState.IdRef="Sequence_4">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <Assign DisplayName="Initialize SystemError" sap:VirtualizedContainerService.HintSize="650,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+                              <Assign DisplayName="Initialize SystemError" sap:VirtualizedContainerService.HintSize="647.2,60" sap2010:WorkflowViewState.IdRef="Assign_5">
                                 <Assign.To>
                                   <OutArgument x:TypeArguments="s:Exception">[SystemError]</OutArgument>
                                 </Assign.To>
@@ -352,7 +352,7 @@
                                   <InArgument x:TypeArguments="s:Exception">[Nothing]</InArgument>
                                 </Assign.Value>
                               </Assign>
-                              <If Condition="[Config is Nothing]" DisplayName="If first run - read Config file" sap:VirtualizedContainerService.HintSize="650,2650" sap2010:WorkflowViewState.IdRef="If_1">
+                              <If Condition="[Config is Nothing]" DisplayName="If first run - read Config file" sap:VirtualizedContainerService.HintSize="647.2,2805.6" sap2010:WorkflowViewState.IdRef="If_1">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -360,25 +360,25 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                                 <If.Then>
-                                  <Sequence DisplayName="First Run" sap:VirtualizedContainerService.HintSize="505,2502" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                  <Sequence DisplayName="First Run" sap:VirtualizedContainerService.HintSize="503.2,2656" sap2010:WorkflowViewState.IdRef="Sequence_17">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="KillAllProcesses" sap:VirtualizedContainerService.HintSize="463,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_18" UnSafe="False" WorkflowFileName="Documentation/Framework/KillAllProcesses.xaml">
+                                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="KillAllProcesses" sap:VirtualizedContainerService.HintSize="461.6,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_18" UnSafe="False" WorkflowFileName="Documentation/Framework/KillAllProcesses.xaml">
                                       <ui:InvokeWorkflowFile.Arguments>
                                         <scg:Dictionary x:TypeArguments="x:String, Argument" />
                                       </ui:InvokeWorkflowFile.Arguments>
                                     </ui:InvokeWorkflowFile>
-                                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="InitConfigSpreadsheetID" sap:VirtualizedContainerService.HintSize="463,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_19" UnSafe="False" WorkflowFileName="[1] Gsuite\InitConfigSpreadsheetID.xaml">
+                                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="InitConfigSpreadsheetID" sap:VirtualizedContainerService.HintSize="461.6,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_19" UnSafe="False" WorkflowFileName="[1] Gsuite\InitConfigSpreadsheetID.xaml">
                                       <ui:InvokeWorkflowFile.Arguments>
                                         <OutArgument x:TypeArguments="x:String" x:Key="out_ConfigSpreadsheetID">[a_ConfigSpreadsheetID]</OutArgument>
                                         <OutArgument x:TypeArguments="x:String" x:Key="out_OAuthClientID">[a_OAuthClientID]</OutArgument>
                                         <OutArgument x:TypeArguments="x:String" x:Key="out_OAuthClientSecret">[a_OAuthClientSecret]</OutArgument>
                                       </ui:InvokeWorkflowFile.Arguments>
                                     </ui:InvokeWorkflowFile>
-                                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="InitAllSettings" sap:VirtualizedContainerService.HintSize="463,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" UnSafe="False" WorkflowFileName="Documentation/Framework/InitAllSettings.xaml">
+                                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="InitAllSettings" sap:VirtualizedContainerService.HintSize="461.6,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" UnSafe="False" WorkflowFileName="Documentation/Framework/InitAllSettings.xaml">
                                       <ui:InvokeWorkflowFile.Arguments>
                                         <InArgument x:TypeArguments="x:String" x:Key="in_ConfigFile">[a_ConfigSpreadsheetID]</InArgument>
                                         <InArgument x:TypeArguments="s:String[]" x:Key="in_ConfigSheets">[{"Settings", "Constants"}]</InArgument>
@@ -387,20 +387,20 @@
                                         <InArgument x:TypeArguments="x:String" x:Key="in_OAuthClientSecret">[a_OAuthClientSecret]</InArgument>
                                       </ui:InvokeWorkflowFile.Arguments>
                                     </ui:InvokeWorkflowFile>
-                                    <ui:AddLogFields DisplayName="Add Log Fields" sap:VirtualizedContainerService.HintSize="463,22" sap2010:WorkflowViewState.IdRef="AddLogFields_1">
+                                    <ui:AddLogFields DisplayName="Add Log Fields" sap:VirtualizedContainerService.HintSize="461.6,22.4" sap2010:WorkflowViewState.IdRef="AddLogFields_1">
                                       <ui:AddLogFields.Fields>
                                         <InArgument x:TypeArguments="x:String" x:Key="logF_본부">[Config("본부").ToString]</InArgument>
                                       </ui:AddLogFields.Fields>
                                     </ui:AddLogFields>
-                                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="WorkFolderSettings" sap:VirtualizedContainerService.HintSize="463,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_25" UnSafe="False" WorkflowFileName="[3] Work\0. Folder Init\a_WorkFolder_Settings.xaml">
+                                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="WorkFolderSettings" sap:VirtualizedContainerService.HintSize="461.6,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_25" UnSafe="False" WorkflowFileName="[3] Work\0. Folder Init\a_WorkFolder_Settings.xaml">
                                       <ui:InvokeWorkflowFile.Arguments>
                                         <InArgument x:TypeArguments="x:String" x:Key="in_TemporaryWork">[Config("TemporaryWork").ToString]</InArgument>
                                       </ui:InvokeWorkflowFile.Arguments>
                                     </ui:InvokeWorkflowFile>
-                                    <ui:RetryScope DisplayName="CargoBI" sap:VirtualizedContainerService.HintSize="463,673" sap2010:WorkflowViewState.IdRef="RetryScope_5" NumberOfRetries="5" RetryInterval="00:00:03">
+                                    <ui:RetryScope DisplayName="CargoBI" sap:VirtualizedContainerService.HintSize="461.6,680" sap2010:WorkflowViewState.IdRef="RetryScope_5" NumberOfRetries="5" RetryInterval="00:00:03">
                                       <ui:RetryScope.ActivityBody>
                                         <ActivityAction>
-                                          <Sequence DisplayName="Retry Scope Sequence" sap:VirtualizedContainerService.HintSize="421,499" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                                          <Sequence DisplayName="Retry Scope Sequence" sap:VirtualizedContainerService.HintSize="420,504" sap2010:WorkflowViewState.IdRef="Sequence_38">
                                             <Sequence.Variables>
                                               <Variable x:TypeArguments="x:Int32" Name="retryNum" />
                                             </Sequence.Variables>
@@ -409,15 +409,15 @@
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <ui:KillProcess Process="{x:Null}" ContinueOnError="True" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="379,22" sap2010:WorkflowViewState.IdRef="KillProcess_5" ProcessName="chrome" />
-                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="379,91" sap2010:WorkflowViewState.IdRef="LogMessage_30" Level="Info" Message="[&quot;Cargobi Login and Settings: &quot;+now.ToString(&quot;hh:mm:ss&quot;)]" />
-                                            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="CargoBILogin" sap:VirtualizedContainerService.HintSize="379,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_20" UnSafe="False" WorkflowFileName="[3] Work/1. Cargo BI - Data Modification/a_CargoBI_Login.xaml">
+                                            <ui:KillProcess Process="{x:Null}" ContinueOnError="True" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="378.4,22.4" sap2010:WorkflowViewState.IdRef="KillProcess_5" ProcessName="chrome" />
+                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="378.4,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_30" Level="Info" Message="[&quot;Cargobi Login and Settings: &quot;+now.ToString(&quot;hh:mm:ss&quot;)]" />
+                                            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="CargoBILogin" sap:VirtualizedContainerService.HintSize="378.4,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_20" UnSafe="False" WorkflowFileName="[3] Work/1. Cargo BI - Data Modification/a_CargoBI_Login.xaml">
                                               <ui:InvokeWorkflowFile.Arguments>
                                                 <InArgument x:TypeArguments="x:String" x:Key="in_CargoBICredential">[Config("cargobiCredential").ToString]</InArgument>
                                                 <InArgument x:TypeArguments="x:String" x:Key="in_CargoBIURL">[Config("cargobiURL").ToString]</InArgument>
                                               </ui:InvokeWorkflowFile.Arguments>
                                             </ui:InvokeWorkflowFile>
-                                            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="CargoBISettings" sap:VirtualizedContainerService.HintSize="379,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_24" UnSafe="False" WorkflowFileName="[3] Work\1. Cargo BI - Data Modification\b_CargoBI_Settings.xaml">
+                                            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="CargoBISettings" sap:VirtualizedContainerService.HintSize="378.4,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_24" UnSafe="False" WorkflowFileName="[3] Work\1. Cargo BI - Data Modification\b_CargoBI_Settings.xaml">
                                               <ui:InvokeWorkflowFile.Arguments>
                                                 <InArgument x:TypeArguments="x:String" x:Key="in_DownloadFileName">[Config("DownloadFileName").ToString]</InArgument>
                                                 <InArgument x:TypeArguments="x:String" x:Key="in_TemporaryWork">[Config("TemporaryWork").ToString]</InArgument>
@@ -436,7 +436,7 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </ui:RetryScope>
-                                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="ExcelFileWorking" sap:VirtualizedContainerService.HintSize="463,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_22" UnSafe="False" WorkflowFileName="[3] Work/1. Cargo BI - Data Modification/c_ExcelFile_Work.xaml">
+                                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="ExcelFileWorking" sap:VirtualizedContainerService.HintSize="461.6,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_22" UnSafe="False" WorkflowFileName="[3] Work/1. Cargo BI - Data Modification/c_ExcelFile_Work.xaml">
                                       <ui:InvokeWorkflowFile.Arguments>
                                         <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dt_IATA">[b_dt_IATA]</OutArgument>
                                         <InArgument x:TypeArguments="x:String" x:Key="in_DownloadFIleName">[Config("DownloadFileName").ToString]</InArgument>
@@ -444,10 +444,10 @@
                                         <OutArgument x:TypeArguments="x:String" x:Key="out_UploadCount">[b_UploadCount]</OutArgument>
                                       </ui:InvokeWorkflowFile.Arguments>
                                     </ui:InvokeWorkflowFile>
-                                    <ui:RetryScope DisplayName="Notepad" sap:VirtualizedContainerService.HintSize="463,746" sap2010:WorkflowViewState.IdRef="RetryScope_4" NumberOfRetries="3" RetryInterval="00:00:03">
+                                    <ui:RetryScope DisplayName="Notepad" sap:VirtualizedContainerService.HintSize="461.6,752" sap2010:WorkflowViewState.IdRef="RetryScope_4" NumberOfRetries="3" RetryInterval="00:00:03">
                                       <ui:RetryScope.ActivityBody>
                                         <ActivityAction>
-                                          <Sequence DisplayName="Retry Scope Sequence" sap:VirtualizedContainerService.HintSize="421,572" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                                          <Sequence DisplayName="Retry Scope Sequence" sap:VirtualizedContainerService.HintSize="420,576" sap2010:WorkflowViewState.IdRef="Sequence_37">
                                             <Sequence.Variables>
                                               <Variable x:TypeArguments="x:Int32" Name="retryCnt" />
                                             </Sequence.Variables>
@@ -456,8 +456,8 @@
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <ui:KillProcess Process="{x:Null}" ContinueOnError="True" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="379,22" sap2010:WorkflowViewState.IdRef="KillProcess_4" ProcessName="notepad" />
-                                            <Assign sap:VirtualizedContainerService.HintSize="379,60" sap2010:WorkflowViewState.IdRef="Assign_31">
+                                            <ui:KillProcess Process="{x:Null}" ContinueOnError="True" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="378.4,22.4" sap2010:WorkflowViewState.IdRef="KillProcess_4" ProcessName="notepad" />
+                                            <Assign sap:VirtualizedContainerService.HintSize="378.4,60" sap2010:WorkflowViewState.IdRef="Assign_31">
                                               <Assign.To>
                                                 <OutArgument x:TypeArguments="x:Int32">[retryCnt]</OutArgument>
                                               </Assign.To>
@@ -465,8 +465,8 @@
                                                 <InArgument x:TypeArguments="x:Int32">[retryCnt+1]</InArgument>
                                               </Assign.Value>
                                             </Assign>
-                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="379,91" sap2010:WorkflowViewState.IdRef="LogMessage_29" Level="Info" Message="[&quot;txt File Working&quot;+retryCnt.ToString+&quot;: &quot;+now.ToString(&quot;hh:mm:ss&quot;)]" />
-                                            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="TxtFileWorking" sap:VirtualizedContainerService.HintSize="379,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_23" UnSafe="False" WorkflowFileName="[3] Work/1. Cargo BI - Data Modification/d_TxtFile_Work.xaml">
+                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="378.4,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_29" Level="Info" Message="[&quot;txt File Working&quot;+retryCnt.ToString+&quot;: &quot;+now.ToString(&quot;hh:mm:ss&quot;)]" />
+                                            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="TxtFileWorking" sap:VirtualizedContainerService.HintSize="378.4,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_23" UnSafe="False" WorkflowFileName="[3] Work/1. Cargo BI - Data Modification/d_TxtFile_Work.xaml">
                                               <ui:InvokeWorkflowFile.Arguments>
                                                 <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dt_IATA">[b_dt_IATA]</InArgument>
                                                 <InArgument x:TypeArguments="x:String" x:Key="in_UploadFileName">[Config("UploadFileName").ToString]</InArgument>
@@ -475,7 +475,7 @@
                                                 <InArgument x:TypeArguments="x:String" x:Key="in_UploadCount">[b_UploadCount]</InArgument>
                                               </ui:InvokeWorkflowFile.Arguments>
                                             </ui:InvokeWorkflowFile>
-                                            <Assign sap:VirtualizedContainerService.HintSize="379,60" sap2010:WorkflowViewState.IdRef="Assign_32">
+                                            <Assign sap:VirtualizedContainerService.HintSize="378.4,60" sap2010:WorkflowViewState.IdRef="Assign_32">
                                               <Assign.To>
                                                 <OutArgument x:TypeArguments="x:Int32">[retryCnt]</OutArgument>
                                               </Assign.To>
@@ -496,25 +496,26 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </ui:RetryScope>
-                                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="OpenIATAAndLogin" sap:VirtualizedContainerService.HintSize="463,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_28" UnSafe="False" WorkflowFileName="[3] Work\2. IATA - Data Upload\a_Open_IATA_And_Login.xaml">
+                                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="OpenIATAAndLogin" sap:VirtualizedContainerService.HintSize="461.6,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_28" UnSafe="False" WorkflowFileName="[3] Work\2. IATA - Data Upload\a_Open_IATA_And_Login.xaml">
                                       <ui:InvokeWorkflowFile.Arguments>
                                         <InArgument x:TypeArguments="x:String" x:Key="in_IATAURL">[Config("IATAURL").ToString]</InArgument>
                                         <InArgument x:TypeArguments="x:String" x:Key="in_IATACredential">[Config("IATACredential").ToString]</InArgument>
                                       </ui:InvokeWorkflowFile.Arguments>
                                     </ui:InvokeWorkflowFile>
-                                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="DataUpload" sap:VirtualizedContainerService.HintSize="463,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_29" UnSafe="False" WorkflowFileName="[3] Work\2. IATA - Data Upload\b_Data_Upload.xaml">
+                                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="DataUpload" sap:VirtualizedContainerService.HintSize="461.6,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_29" UnSafe="False" WorkflowFileName="[3] Work\2. IATA - Data Upload\b_Data_Upload.xaml">
                                       <ui:InvokeWorkflowFile.Arguments>
                                         <InArgument x:TypeArguments="x:String" x:Key="in_TemporaryWork">[Config("TemporaryWork").ToString]</InArgument>
                                         <InArgument x:TypeArguments="x:String" x:Key="in_UploadFileName">[Config("UploadFileName").ToString]</InArgument>
                                       </ui:InvokeWorkflowFile.Arguments>
                                     </ui:InvokeWorkflowFile>
+                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="461.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_31" Level="Info" Message="[&quot;git 추가&quot;]" />
                                   </Sequence>
                                 </If.Then>
                               </If>
                             </Sequence>
                           </TryCatch.Try>
                           <TryCatch.Catches>
-                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="696,129" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="692,130.4" sap2010:WorkflowViewState.IdRef="Catch`1_3">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -525,7 +526,7 @@
                                 <ActivityAction.Argument>
                                   <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                 </ActivityAction.Argument>
-                                <Assign DisplayName="Assign excepton to SystemError" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_14">
+                                <Assign DisplayName="Assign excepton to SystemError" sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_14">
                                   <Assign.To>
                                     <OutArgument x:TypeArguments="s:Exception">[SystemError]</OutArgument>
                                   </Assign.To>
